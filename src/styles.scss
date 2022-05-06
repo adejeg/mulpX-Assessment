@@ -1,19 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~ngx-toastr/toastr';
 
+@font-face {
+    font-family: 'Neue Haas Unica';
+    src: url(/assets/font/NeueHaasUnicaPro-Light.ttf);
+}
+
 html{
     --primary: #026735;
     --white: #ffffff;
     --secondary: #F37C6B;
     --brown: #7D5C44;
-    font-family:'Poppins', sans-serif;
+    font-family:'Neue Haas Unica', sans-serif;
     font-weight: 400;
 }
 
 .label{
     color: #787878;
 }
-
+h3{
+    font-weight: 700;
+}
 .btn-brown{
     background-color: var(--brown);
     color: var(--white);
