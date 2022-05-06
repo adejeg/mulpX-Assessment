@@ -1,0 +1,50 @@
+<div class="sidebar radius-30">
+    <div class="my-4 text-center">
+        <img [src]="user?.profilePicture" alt="" class="avatar radius">
+        <h4 class="mb-0">{{user?.firstName}} {{user?.lastName}}</h4>
+        <p class="mb-0 label"><small>{{user?.jobTitle}}</small></p>
+    </div>
+    <ul class="list-unstyled">
+      <li [ngClass]="{active: url === '/'}" (click)="navigateTo('dashboard')">
+        <img class="cursor" src="assets/icons/Group.svg">
+        <span class="cursor sidebar-label">Dashboard</span>
+      </li>
+      <li>
+        <img class="cursor" src="assets/icons/weight.svg">
+        <span class="cursor sidebar-label">Wallet Balance</span>
+      </li>
+      <li>
+        <img class="cursor" src="assets/icons/history.svg">
+        <span class="cursor sidebar-label">Transactions</span>
+      </li>
+      <li>
+        <img class="cursor" src="assets/icons/big-data.svg">
+        <span class="cursor sidebar-label">Data Bank</span>
+      </li>
+      <li>
+        <img class="cursor" src="assets/icons/comment.svg">
+        <span class="cursor sidebar-label">Chat Support</span>
+      </li>
+      <li>
+        <img class="cursor" src="assets/icons/settings.svg">
+        <span class="cursor sidebar-label">Settings</span>
+      </li>
+    </ul>
+
+    <div class="mt-auto mb-5">
+        <div class="footer text-white p-3 mx-2">
+            <div class="text-center">
+                <img src="assets/images/Referral-box.svg" alt="">
+            </div>
+            <div class="footer-overlay">
+            </div>
+            <div class="footer-content">
+                <h6 class="mb-0">Refer a friend</h6>
+                <p class="mb-0">
+                    <small>Get 500 naira referral bonus</small>
+                </p>
+                <button class="btn btn-danger btn-sm radius-10">Refer Now</button>
+            </div>
+        </div>
+    </div>
+</div>

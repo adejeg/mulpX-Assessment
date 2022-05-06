@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~ngx-toastr/toastr';
+
+html{
+    --primary: #026735;
+    --white: #ffffff;
+    --secondary: #F37C6B;
+    --brown: #7D5C44;
+    font-family:'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.label{
+    color: #787878;
+}
+
+.btn-brown{
+    background-color: var(--brown);
+    color: var(--white);
+}
+
+.radius{
+    border-radius: 50%;
+}
+
+.radius-10{
+    border-radius: 10px;
+}
+
+.radius-20{
+    border-radius: 20px;
+}
+
+.radius-30{
+    border-radius: 30px;
+}
+
+.shadow{
+    box-shadow: 50px 100px 100px rgba(0, 0, 0, 0.04);
+}
+
+.text-success{
+    color: #0DBA9C !important;
+}

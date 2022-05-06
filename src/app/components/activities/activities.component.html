@@ -1,0 +1,16 @@
+<div class="d-flex activity p-2 radius-10">
+    <div class="activity-avatar radius-10 d-flex justify-content-center align-items-center px-4 mr-3">
+        <img src="assets/icons/salary.svg" alt="">
+    </div>
+    <div class="w-50 d-flex align-items-center">
+    <div>
+        <p class="mb-0">{{data?.transactionDescription}}</p>
+        <p class="mb-0"><small>12 of 12 people sent</small></p>
+    </div>
+    </div>
+    <div class="text-right">
+        <p class="mb-0">{{{"NGN":"₦", "USD":"$", "EUR":"€"}[data?.transactionCurrency]}}{{data?.transactionAmount.toLocaleString()}}</p>
+        <p class="mb-0 label"><small>{{data?.transactionType}}</small></p>
+        <p class="mb-0"><small>{{data?.transactionDate | amCalendar}}</small></p>
+    </div>        
+</div>

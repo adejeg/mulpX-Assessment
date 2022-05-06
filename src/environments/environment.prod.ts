@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  server: 'https://dv-test-api.herokuapp.com/api/v1/test/'
 };
